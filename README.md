@@ -1,8 +1,12 @@
 # TestApp
 
+This Project was initiated for getting comfortable with angular syntax and learning purposes mr.kheirkhah
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.0.
 
 ## Development server
+
+Run `npm install` in order to install all dependencies
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
