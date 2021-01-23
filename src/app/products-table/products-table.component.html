@@ -1,0 +1,40 @@
+<div class="table-container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Owner Name</th>
+        <th>Availability</th>
+        <th>Image-Url</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prod of products">
+        <td>{{ prod.title }}</td>
+        <td>{{ prod.description }}</td>
+        <td>{{ prod.price }}</td>
+        <td>{{ prod.ownerName }}</td>
+        <td>{{ prod.isAvailable }}</td>
+        <td>{{ prod.imageUrl }}</td>
+        <td>
+          <a
+            class="nav-link btn btn-link btn-sm d-block"
+            [routerLink]="['/product', prod.id]"
+          >
+            edit
+          </a>
+        </td>
+        <td>
+          <button
+            class="btn btn-danger btn-sm"
+            (click)="deleteProduct(prod.id)"
+          >
+            delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

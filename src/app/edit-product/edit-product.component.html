@@ -1,0 +1,66 @@
+<div class="container py-4">
+  <form *ngIf="!product !== null">
+    <div class="form-group">
+      <label for="product.title">Title:</label>
+      <input
+        class="form-control"
+        type="text"
+        name="product.title"
+        [(ngModel)]="product.title"
+      />
+    </div>
+    <div class="form-group">
+      <label for="product.description">Description:</label>
+      <input
+        class="form-control"
+        type="text"
+        name="product.description"
+        [(ngModel)]="product.description"
+      />
+    </div>
+    <div class="form-group">
+      <label for="product.imageUrl">Image-Url:</label>
+      <input
+        class="form-control"
+        type="text"
+        name="product.imageUrl"
+        [(ngModel)]="product.imageUrl"
+      />
+    </div>
+    <div class="form-group">
+      <label for="product.isAvailable">Is Product Available:</label>
+      <input
+        class="form-control"
+        type="checkbox"
+        name="product.isAvailable"
+        [(ngModel)]="product.isAvailable"
+      />
+    </div>
+    <div class="form-group">
+      <label for="product.price">Product Price:</label>
+      <input
+        class="form-control"
+        type="number"
+        name="product.price"
+        [(ngModel)]="product.price"
+      />
+    </div>
+    <div class="form-group">
+      <label for="product.ownerName">Product Owner:</label>
+      <input
+        class="form-control"
+        readonly
+        type="text"
+        name="product.ownerName"
+        [(ngModel)]="product.ownerName"
+      />
+    </div>
+
+    <button class="btn btn-success" type="submit" (click)="saveProd()">
+      save
+    </button>
+    <button class="btn btn-danger mx-4" type="submit" (click)="deleteProd()">
+      delete
+    </button>
+  </form>
+</div>
