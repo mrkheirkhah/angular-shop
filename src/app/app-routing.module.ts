@@ -6,6 +6,7 @@ import { ProductShowComponent } from './product-show/product-show.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ProductStoreComponent } from './product-store/product-store.component';
 const routes: Routes = [
+  { path: '', component: ProductStoreComponent },
   { path: 'admin', component: AdminComponent },
   {
     path: 'products',

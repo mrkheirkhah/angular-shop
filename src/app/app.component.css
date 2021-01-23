@@ -22,3 +22,13 @@ header div {
   float: right;
   opacity: 0.5;
 }
+
+footer {
+  width: 100vw;
+  height: 55px;
+  background-color: #f8f9fa;
+  color: #707070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
